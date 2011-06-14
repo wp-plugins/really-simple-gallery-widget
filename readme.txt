@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 3.1.3
 Stable tag: 1.1
 
-Widget to display images attached to a specific page/post or from the entire media library. Includes options for number of images, display order (including true random), any registered image size, caption toggling, type of link, rel attribute, and link title prefix. Can also show images attached to the page/post currently being viewed.
+Simple widget for displaying images from the Media Library with plenty of configurable options.
 
 == Description ==
 
