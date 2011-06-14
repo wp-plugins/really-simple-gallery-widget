@@ -38,7 +38,7 @@ Really Simple Gallery Widget is most easily installed automatically via the Plug
 == Frequently Asked Questions ==
 
 = Why won't images I've hotlinked or copy-pasted into my content appear? =
-This widget can only grab images that were uploaded into your Media Library.
+This widget can only grab images that were uploaded into your Media Library. See the [WordPress Codex](http://codex.wordpress.org/Using_Image_and_File_Attachments#Attachment_to_a_Post "WordPress Codex") for more information.
 
 = Why is the wrong kind of link being used? =
 The image is probably not associated with a post or page and will default to linking to the file if a link option is chosen. To associate (attach) an image with a post or page, go to your Media Library and click on the Unattached link next to the item to choose a post to attach it to. See the [WordPress Codex](http://codex.wordpress.org/Using_Image_and_File_Attachments#Attachment_to_a_Post "WordPress Codex") for more information. An option to choose what to link to in the case of not having an associated post or page will probably be added in the future.
