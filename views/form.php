@@ -6,13 +6,15 @@ $image_size_options = get_intermediate_image_sizes();
 $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'post_id' => '', 'num_images' => '0', 'image_size' => 'thumbnail', 'order' => 'rand', 'link_type' => 'file', 'before_title' => '', 'link_rel' => '' ) );
 $title = strip_tags($instance['title']);
 $post_id = $instance['post_id'];
+$full_library = $instance['full_library'] ? 'checked="checked"' : '';
+$current_post_images = $instance['current_post_images'] ? 'checked="checked"' : '';
 $num_images = $instance['num_images'];
 $show_captions = $instance['show_captions'] ? 'checked="checked"' : '';
 $image_size = $instance['image_size'];
 $order = $instance['order'];
 $link_type = $instance['link_type'];
-$before_link_title = strip_tags($instance['before_link_title']);
-$link_rel = strip_tags($instance['link_rel']);
+$before_link_title = esc_attr( strip_tags($instance['before_link_title']) );
+$link_rel = esc_attr( strip_tags($instance['link_rel']) );
 ?>
 <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
@@ -22,6 +24,14 @@ $link_rel = strip_tags($instance['link_rel']);
 <p><label for="<?php echo $this->get_field_id('post_id'); ?>"><?php _e('Page or post ID:'); ?></label>
 <input id="<?php echo $this->get_field_id('post_id'); ?>" name="<?php echo $this->get_field_name('post_id'); ?>" type="text" size="3" value="<?php echo $post_id; ?>" /><br />
 <em>(Numbers only)</em></p>
+
+<p><input class="checkbox" type="checkbox" <?php echo $full_library; ?> id="<?php echo $this->get_field_id('full_library'); ?>" name="<?php echo $this->get_field_name('full_library'); ?>" />
+<label for="<?php echo $this->get_field_id('full_library'); ?>"><?php _e('Use entire media gallery'); ?><br />
+<em><?php _e('(Overrides specific page or post ID)'); ?></em></label></p>
+
+<p><input class="checkbox" type="checkbox" <?php echo $current_post_images; ?> id="<?php echo $this->get_field_id('current_post_images'); ?>" name="<?php echo $this->get_field_name('current_post_images'); ?>" />
+<label for="<?php echo $this->get_field_id('current_post_images'); ?>"><?php _e('Only show images attached to the page/post when on a single page/post'); ?><br />
+<small><em><?php _e('(Specific ID or full library options will still be used when not viewing single page/post)'); ?></em></small></label></p>
 
 <p><label for="<?php echo $this->get_field_id('num_images'); ?>"><?php _e('Number of images to show:'); ?></label>
 <input id="<?php echo $this->get_field_id('num_images'); ?>" name="<?php echo $this->get_field_name('num_images'); ?>" type="text" size="1" value="<?php echo $num_images; ?>" /><br />
