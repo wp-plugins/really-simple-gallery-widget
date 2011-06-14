@@ -1,4 +1,4 @@
-<?php
+<?php 
 $order_options = array('Random' => 'rand', 'Ascending' => 'asc', 'Descending' => 'desc');
 $link_type_options = array('File' => 'file', 'Anchor on Post/Page' => 'anchor', 'Post/Page' => 'post', 'Attachment' => 'attachment', 'None' => 'none');
 $image_size_options = get_intermediate_image_sizes();
