@@ -3,7 +3,7 @@ Contributors: helenyhou
 Donate link: http://www.helenhousandi.com/wordpress/donate/
 Tags: gallery, widget
 Requires at least: 2.8
-Tested up to: 3.1.3
+Tested up to: 3.2
 Stable tag: 1.1
 
 Simple widget for displaying images from the Media Library with plenty of configurable options.
