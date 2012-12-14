@@ -1,6 +1,6 @@
 === Really Simple Gallery Widget ===
-Contributors: helenyhou
-Donate link: http://www.helenhousandi.com/wordpress/donate/
+Contributors: helen
+Donate link: http://helen.wordpress.com/donate/
 Tags: gallery, widget
 Requires at least: 2.8
 Tested up to: 3.2
