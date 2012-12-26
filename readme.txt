@@ -65,18 +65,18 @@ See [Styling the Really Simple Gallery Widget](http://helen.wordpress.com/2011/0
 == Changelog ==
 
 = 1.2 =
-==Fixed==
+=== Fixed ===
 * Caption no longer always shows the one for the last image queried.
 * Can now be used on custom post types.
 
-==New==
+=== New ===
 * Mostly rewritten code - no notices, cleaner with coding standards, more sane data sanitization.
 * More intuitive interface for specifying where to select images from, including a new option to specify image attachment IDs
 * Additional option for what to order by.
 * Text before link title and link rel attribute are hdiden under "Advanced Options" to reduce some of the visual weight of the widget options.
 * Better markup - now using dl/dt/dd, with filterable classes. The original classes should remain, but styling may change or break depending on how your CSS was written.
 
-===Filters!===
+=== Filters! ===
 * `rsgw_from_options`
 * `rsgw_order_options`
 * `rsgw_orderby_options`
@@ -100,6 +100,9 @@ See [Styling the Really Simple Gallery Widget](http://helen.wordpress.com/2011/0
 * First version
 
 == Upgrade Notice ==
+
+= 1.2 =
+Major update - bugs fixed, features added. You may need to tweak any custom styling.
 
 = 1.1 =
 More display options
