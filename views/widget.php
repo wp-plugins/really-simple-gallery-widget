@@ -5,6 +5,8 @@ if ( ! empty( $args['title'] ) ) {
 	echo $args['before_title'] . $args['title'] . $args['after_title'];
 }
 
+do_action( 'rsgw_before_widget' );
+
 // initialize the images array
 $images = array();
 
@@ -228,5 +230,7 @@ if ( ! empty( $images ) ) {
 
 	echo $output;
 } // !empty( $images )
+
+do_action( 'rsgw_after_widget' );
 
 echo $args['after_widget'];
